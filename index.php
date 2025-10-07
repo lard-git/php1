@@ -10,14 +10,14 @@
     <?php
     echo "<h1>PHP BASIC EXERCISES</h1>";
 
-    // 1. Introduce Yourself
+    // 1
     $name = "Arevalo, Elizar Jay";
     $age = 20;
     $color = "Violet";
     echo "<section><h2>1. Introduce Yourself</h2>";
     echo "<p>Hi! I’m $name, I am $age years old, and my favorite color is $color.</p></section>";
 
-    // 2. Simple Math
+    // 2
     $a = 10;
     $b = 3;
     $sum = $a + $b;
@@ -31,7 +31,7 @@
     echo "<p>Product: $prod</p>";
     echo "<p>Quotient: $quot</p></section>";
 
-    // 3. Area and Perimeter of a Rectangle
+    // 3
     $length = 5;
     $width = 8;
     $area = $length * $width;
@@ -41,14 +41,14 @@
     echo "<p>Area: $area</p>";
     echo "<p>Perimeter: $perimeter</p></section>";
 
-    // 4. Temperature Converter (Celsius to Fahrenheit)
+    // 4
     $celsius = 30;
     $fahrenheit = ($celsius * 9/5) + 32;
 
     echo "<section><h2>4. Temperature Converter</h2>";
-    echo "<p>$celsius°C = $fahrenheit°F</p></section>";
+    echo "<p>$celsius = $fahrenheit</p></section>";
 
-    // 5. Swapping Variables
+    // 5
     $x = 5;
     $y = 10;
     $temp = $x;
@@ -58,7 +58,7 @@
     echo "<section><h2>5. Swapping Variables</h2>";
     echo "<p>After swapping: x = $x, y = $y</p></section>";
 
-    // 6. Salary Calculator
+    // 6
     $basic_salary = 15000;
     $allowance = 5000;
     $deduction = 2000;
@@ -67,7 +67,7 @@
     echo "<section><h2>6. Salary Calculator</h2>";
     echo "<p>Net Salary: ₱$net_salary</p></section>";
 
-    // 7. BMI Calculator
+    // 7
     $weight = 68; // in kg
     $height = 1.75; // in meters
     $bmi = $weight / ($height * $height);
@@ -75,7 +75,7 @@
     echo "<section><h2>7. BMI Calculator</h2>";
     echo "<p>Your BMI is: " . number_format($bmi, 2) . "</p></section>";
 
-    // 8. String Manipulation
+    // 8
     $sentence = "Learning PHP is fun and rewarding!";
     $length = strlen($sentence);
     $wordCount = str_word_count($sentence);
@@ -89,7 +89,7 @@
     echo "<p>Uppercase: $upper</p>";
     echo "<p>Lowercase: $lower</p></section>";
 
-    // 9. Bank Account Simulation
+    // 9
     $balance = 10000;
     $deposit = 2500;
     $withdraw = 1500;
@@ -98,7 +98,7 @@
     echo "<section><h2>9. Bank Account Simulation</h2>";
     echo "<p>Final Balance: ₱$balance</p></section>";
 
-    // 10. Simple Grading System
+    // 10
     $math = 92;
     $english = 85;
     $science = 88;
@@ -118,7 +118,7 @@
     echo "<p>Average: " . number_format($average, 2) . "</p>";
     echo "<p>Grade: $grade</p></section>";
 
-    // 11. Currency Converter
+    // 11
     $php_amount = 1000;
     $usd_rate = 0.018;
     $eur_rate = 0.016;
@@ -132,17 +132,6 @@
     echo "<p>PHP $php_amount = EUR " . number_format($eur, 2) . "</p>";
     echo "<p>PHP $php_amount = JPY " . number_format($jpy, 2) . "</p></section>";
 
-    // 12. Travel Cost Estimator
-    $distance = 200; // km
-    $fuel_consumption = 12; // km per liter
-    $fuel_price = 70; // per liter
-    $fuel_needed = $distance / $fuel_consumption;
-    $travel_cost = $fuel_needed * $fuel_price;
-
-    echo "<section><h2>12. Travel Cost Estimator</h2>";
-    echo "<p>Distance: $distance km</p>";
-    echo "<p>Fuel Needed: " . number_format($fuel_needed, 2) . " liters</p>";
-    echo "<p>Estimated Travel Cost: ₱" . number_format($travel_cost, 2) . "</p></section>";
-    ?>
 </body>
 </html>
+
