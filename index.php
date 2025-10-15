@@ -15,14 +15,24 @@
     $color = "Violet";
     echo "<section><h2>1. Introduce Yourself</h2>";
     echo "<p>Hi! I’m $name, I am $age years old, and my favorite color is $color.</p></section>";
+    ?>
 
-    $a = 10;
-    $b = 3;
+    
+	
+    <form action="index.php" method="POST">
+    number1: <input type="number" name="a"><br>
+    number2: <input type="number" name="b"><br>
+    <input type="submit">
+    </form>
+
+    <?php
+    $a = $_POST["a"];
+    $b = $_POST["b"];
     $sum = $a + $b;
     $diff = $a - $b;
     $prod = $a * $b;
     $quot = $a / $b;
-
+    
     echo "<section><h2>2. Simple Math</h2>";
     echo "<p>Sum: $sum</p>";
     echo "<p>Difference: $diff</p>";
